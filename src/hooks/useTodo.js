@@ -72,7 +72,7 @@ export const useUpdateTodo = () => {
                 },
               });
             }
-          } else if (filters.isDone) {
+          } else if (filters.isDone !== null && filters.isDone !== undefined) {
             // If the todo should no longer be in this list, remove it
             const updatedTodoList = todoList.filter(todo => todo.id !== updatedItem.id);
 
