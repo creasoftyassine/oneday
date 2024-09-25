@@ -112,5 +112,3 @@ REACT_APP_API_URL=http://localhost:4000 docker-compose up
 You should be able to access the application at `http://localhost:3000`.
 
 ---
-
-This project is designed to be maintainable, scalable, and easily extensible with a clear and modular architecture.
