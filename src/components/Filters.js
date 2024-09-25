@@ -47,7 +47,7 @@ const Filters = () => {
         setFilters({ types: [], isDone: null, orderBy: 'DATE_DESC' });
     }, [setFilters]);
 
-    const isBusinessOnly = filters.types.includes('Marketing') && filters.types.includes('Communication');
+    const isBusinessOnly = filters.types.length === 2 && filters.types.includes('Marketing') && filters.types.includes('Communication');
 
     const CheckboxGroup = ({ types, filters, handleChange }) => (
         <div css={checkboxGridStyle}>
